@@ -76,6 +76,7 @@ userSchema.methods.validatePassword = function validatePassword(password) {
 userSchema
   .virtual('passwordConfirmation')
   .set(function setPasswordConfirmation(passwordConfirmation) {
+    console.log('here')
     this._passwordConfirmation = passwordConfirmation
   })
 
